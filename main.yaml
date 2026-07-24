@@ -3,7 +3,10 @@
 # 格式: classical | 更新: 修改后 push，24h 内自动同步（或手动刷新）
 
 payload:
+#Proxy
   - DOMAIN-SUFFIX,rabbit08.pro,Proxy
+
+#DIRECT
   - DOMAIN-SUFFIX,botuzhiyue.com,DIRECT
 # - DOMAIN-SUFFIX,another-domain.cn,DIRECT
 
