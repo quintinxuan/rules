@@ -1,5 +1,23 @@
+# Myrules — 自定义规则（优先级最高，覆盖所有规则集）
+# 路径: https://github.com/quintinxuan/rules/blob/main/main.yaml
+# 格式: classical | 更新: 修改后 push，24h 内自动同步（或手动刷新）
+
 payload:
-  - DOMAIN-SUFFIX,rabbit08.pro
-  - DOMAIN-KEYWORD,rabbit08
-  #- DOMAIN-SUFFIX,botuzhiyue.com
-  #- DOMAIN-KEYWORD,botuzhiyue
+  - DOMAIN-SUFFIX,rabbit08.pro,Proxy
+  - DOMAIN-SUFFIX,botuzhiyue.com,DIRECT
+# - DOMAIN-SUFFIX,another-domain.cn,DIRECT
+
+# ── 缺失的 AI 服务（blackmatrix7 未收录）──
+#- DOMAIN-SUFFIX,perplexity.ai,AI
+#- DOMAIN-SUFFIX,grok.com,AI
+#- DOMAIN-SUFFIX,x.ai,AI
+
+# ── 需要强制代理的网站 ──
+# - DOMAIN-KEYWORD,example,Proxy
+
+# ── 需要强制直连的网站 ──
+# - DOMAIN-SUFFIX,some-cn-site.com,Domestic
+
+# ── 屏蔽广告/跟踪 ──
+# - DOMAIN-KEYWORD,adservice,REJECT
+# - DOMAIN-SUFFIX,doubleclick.net,REJECT
